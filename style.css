@@ -1,0 +1,88 @@
+/*
+Theme Name:     Comet for atjine
+Theme URI:      http://atechnologyjobisnoexcuse.com/
+Description:    A Technology Job Is No Excuse's Child theme for Frostpress' Comet
+Author:         Gunnar Hellekson
+Author URI:     http://gunnar.hellekson.com/about/
+Template:       comet
+Version:        0.1.0
+*/
+
+/* Import our parent theme stylesheet */
+@import url("../comet/style.css");
+
+/* 
+ * Make the header less ridiculous 
+ */
+#header {
+        padding: 20px 0px 20px 0px;
+}
+
+#header h4 {
+   margin: 0px 0px 0px 0px;
+}
+
+/*
+ * Make the menu less ugly
+ */
+li.menu-item {
+   font-family: Verdana,Tahoma,sans-serif;
+}
+
+
+/*
+ * LIFTED CORNERS IMAGES for "image" posts only
+ */
+div.format-image div.post-text img {
+    background:#FFF;
+    margin:40px auto;
+    padding: 5px;
+    -webkit-box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*
+ * STATUS CLASS
+ */
+.format-status .post-title {
+   display:none;
+}
+
+/*
+ * EVENTS
+ */
+
+/* next/previous post navigation for The Event Listing plugin */
+.navlink {
+	margin: 30px 0px 30px 0px;
+}
+	.navlink.previous {
+		display: inline-block;
+		width: 40%;
+		padding: 0px 0px 0px 40px;
+		background: url('/wp-content/themes/comet/images/icon_left.png') left top no-repeat;
+	}
+.navlink.next:before { 
+                content:"Next Event";
+		color: #999999;
+		font-size: 8pt;
+		font-style: italic;
+		letter-spacing: 1px;
+                display:block;
+}
+.navlink.previous:before { 
+                content:"Previous Event";
+		color: #999999;
+		font-size: 8pt;
+		font-style: italic;
+		letter-spacing: 1px;
+                display:block;
+}
+	.navlink.next {
+		display: inline-block;
+		width: 40%;
+		padding: 0px 40px 0px 0px;
+		background: url('/wp-content/themes/comet/images/icon_right.png') right top no-repeat;
+		text-align: right;		
+	}
