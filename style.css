@@ -11,6 +11,32 @@ Version:        0.1.0
 /* Import our parent theme stylesheet */
 @import url("../comet/style.css");
 
+/* Font Experiment */
+/* Import Fonts
+ * ------------------------------------------------------------ */
+
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+
+/* Defaults
+ * ------------------------------------------------------------ */
+
+body,
+h1,
+h2,
+h2 a,
+h2 a:visited,
+h3,
+h4,
+h5,
+h6,
+p,
+select,
+textarea {
+	color: #222;
+	font-family: 'Lora', Georgia, "Times New Roman", Times;
+}
+
 /* 
  * Make the header less ridiculous 
  */
@@ -26,9 +52,15 @@ Version:        0.1.0
  * Make the menu less ugly
  */
 li.menu-item {
-   font-family: Verdana,Tahoma,sans-serif;
+   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
+/*
+ * Make post tiles not italic
+ */
+h1.post-title {
+   font-style:normal;
+}
 
 /*
  * LIFTED CORNERS IMAGES for "image" posts only
@@ -86,3 +118,4 @@ div.format-image div.post-text img {
 		background: url('/wp-content/themes/comet/images/icon_right.png') right top no-repeat;
 		text-align: right;		
 	}
+
