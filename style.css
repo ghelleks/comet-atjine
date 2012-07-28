@@ -8,8 +8,6 @@ Template:       comet
 Version:        0.1.0
 */
 
-/* Import our parent theme stylesheet */
-@import url("../comet/style.css");
 
 /* Font Experiment */
 /* Import Fonts
@@ -35,6 +33,8 @@ select,
 textarea {
 	color: #222;
 	font-family: 'Lora', Georgia, "Times New Roman", Times;
+	line-height: 1.65;
+	line-height: 1.65;
 }
 
 /* 
@@ -56,18 +56,25 @@ li.menu-item {
 }
 
 /*
- * Make post tiles not italic
+ * Post tiles in sans, and not italic
  */
 h1.post-title {
+   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
    font-style:normal;
 }
 
 /*
  * LIFTED CORNERS IMAGES for "image" posts only
  */
-div.format-image div.post-text img {
+#content div.format-image div.post-text img {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display:block;
     background:#FFF;
-    margin:40px auto;
     padding: 5px;
     -webkit-box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -119,3 +126,6 @@ div.format-image div.post-text img {
 		text-align: right;		
 	}
 
+
+/* Import our parent theme stylesheet */
+@import url("../comet/style.css");
